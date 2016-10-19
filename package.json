@@ -119,6 +119,7 @@
     "style-loader": "^0.13.0",
     "stylelint": "^7.2.0",
     "stylelint-config-standard": "^13.0.0",
-    "phenomic": "^0.17.8"
+    "phenomic": "^0.17.8",
+    "react-disqus-thread": "^0.3.1"
   }
 }

@@ -5,6 +5,8 @@ import { BodyContainer, joinUri } from "phenomic"
 
 import styles from "./index.css"
 
+import DisqusThread from "react-disqus-thread"
+
 const Page = (
   {
     __filename,
@@ -54,6 +56,11 @@ const Page = (
       { header }
       <BodyContainer>{ body }</BodyContainer>
       { children }
+      <DisqusThread
+        shortname="head4code"
+        identifier={ head.title }
+        title={ head.title }
+      />
       { footer }
     </div>
   )

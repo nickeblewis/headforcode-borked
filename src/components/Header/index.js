@@ -1,6 +1,5 @@
 import React, { PropTypes } from "react"
 import { Link } from "react-router"
-
 import styles from "./index.css"
 import Svg from "react-svg-inline"
 import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
@@ -15,6 +14,24 @@ const Header = (props, { metadata: { pkg } }) => (
           to="/"
         >
           { "Home" }
+        </Link>
+        <Link
+          className={ styles.link }
+          to="/nvq"
+        >
+          { "NVQ" }
+        </Link>
+        <Link
+          className={ styles.link }
+          to="/courses/javascript"
+        >
+          { "Courses" }
+        </Link>
+        <Link
+          className={ styles.link }
+          to="/research"
+        >
+          { "Research" }
         </Link>
       </div>
       <div className={ styles.navPart2 }>
